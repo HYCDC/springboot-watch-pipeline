@@ -1,0 +1,5 @@
++ make tag
+sed -i -e "s/version:.*/version: 1.0.4/" Chart.yaml
+sed -i -e "s|repository: .*|repository: 10.102.202.92:5000\/kiss0840-sohu-com\/springboot-watch-pipeline|" values.yaml
+sed -i -e "s/tag: .*/tag: 1.0.4/" values.yaml
+git add --all

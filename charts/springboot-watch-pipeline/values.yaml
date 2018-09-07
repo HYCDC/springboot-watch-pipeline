@@ -3,8 +3,8 @@
 # Declare variables to be passed into your templates.
 replicaCount: 1
 image:
-  repository: draft
-  tag: dev
+  repository: 10.102.202.92:5000/kiss0840-sohu-com/springboot-watch-pipeline
+  tag: 1.0.4
   pullPolicy: IfNotPresent
 service:
   name: springboot-watch-pipeline
