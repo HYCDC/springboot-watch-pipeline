@@ -73,6 +73,10 @@ pipeline {
             container('maven') {
               sh 'jx step changelog --version v\$(cat ../../VERSION)'
 
+                
+              sh 'helm init --upgrade --stable-repo-url https://kubernetes.oss-cn-hangzhou.aliyuncs.com/charts'
+                
+                
               // release the helm chart
               sh 'jx step helm release'
 
